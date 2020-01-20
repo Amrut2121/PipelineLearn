@@ -4,7 +4,7 @@ pipeline{
         stages{
           stage("stage 1"){
           steps{ 
-               echo " Hi this is Amrut Nigade Jenkins Administrator"
+               echo ' Hi this is Amrut Nigade Jenkins Administrator'
               }
             }
           stage("stage 2"){
@@ -17,9 +17,9 @@ pipeline{
                             input('Do you still want to proceed?')
                           }
                           }
-                          stage("stage 4){
+                          stage("stage 4"){
                                 steps{
-                                  echo " We are done our executed perfectely"
+                                  echo ' We are done our executed perfectely'
                                 }
                                 }      
             
