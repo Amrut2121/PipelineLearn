@@ -1,12 +1,28 @@
   
 pipeline{
-  agent {docker {image 'python:3.5.1' }}
+  agent any
         stages{
-          stage("Output1"){
+          stage("stage 1"){
           steps{ 
-              sh 'python -version'
+               echo " Hi this is Amrut Nigade Jenkins Administrator"
               }
             }
+          stage("stage 2"){
+            steps{
+              input('Do you want to proceed?') 
+            }
+            }
+                    Stage("stage 3){
+                          steps{
+                            input('Do you still want to proceed?')
+                          }
+                          }
+                          stage("stage 4){
+                                steps{
+                                  echo " We are done our executed perfectely"
+                                }
+                                }      
+            
           }
        
               
