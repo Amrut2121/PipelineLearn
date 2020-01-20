@@ -11,19 +11,18 @@ pipeline{
             steps{
               input('Do you want to proceed?') 
             }
-            }
-                    Stage("stage 3"){
-                          steps{
-                            input('Do you still want to proceed?')
-                          }
-                          }
-                          stage("stage 4"){
-                                steps{
-                                  echo ' We are done our executed perfectely'
-                                }
-                                }      
-            
+                  }
+            stage("stage 3"){
+               steps{
+                 input('Do you still want to proceed?')
+                     }
+                  }
+             stage("stage 4"){
+                steps{
+                  echo ' We are done our executed perfectely'
+                       }
+                  }      
+        
           }
-       
-              
+                  
 }
