@@ -1,17 +1,13 @@
   
 pipeline{
-  agent any
+  agent {docker {image 'python:3.5.1' }}
         stages{
           stage("Output1"){
           steps{ 
-              sh 'echo Hello World how are you'
+              sh 'python -version'
               }
+            }
           }
-          stage("Output2"){
-          steps{
-              sh 'ps -ef '
-              }
-          }
-        }
-        
+       
+              
 }
