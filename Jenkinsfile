@@ -4,7 +4,7 @@ pipeline{
         stages{
           stage("Output1"){
           steps{ 
-              echo Hello World how are you
+              sh 'echo Hello World how are you'
               }
           }
           stage("Output2"){
