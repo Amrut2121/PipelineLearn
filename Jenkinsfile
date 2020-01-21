@@ -1,5 +1,7 @@
-node {
-    stage("speak") {
+pipeline {
+    stages{
+        stage("speak") {
         slackSend color: '#BADA55', message: 'Hello, World!'
-    }
+         }
+    }        
 }
